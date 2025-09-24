@@ -7,7 +7,7 @@ $query_password = "SELECT password_user  FROM user WHERE user = '$user'";
 // // $user = $_POST['usuario'];
 
 //Consulta.
-$db = new SQLite3('../DB_USER.db');
+$db = new SQLite3('../DB/DB_USER.db');
 $result_user = $db->querySingle($query_user);
 $result_password = $db->querySingle($query_password);
 $db->close();

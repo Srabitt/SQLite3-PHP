@@ -22,8 +22,8 @@ if ($isLogged) {
 <body>
     <!-- Debemos de renderizar aqui -->
     <!-- <h1>Login simple.</h1> -->
-    <?php require_once('./layouts/registro-usuario.php')?>
-    <?php require_once('./layouts/login-usuario.php')?>
+    <?php require_once('./frontend/layouts/registro-usuario.php')?>
+    <?php require_once('./frontend/layouts/login-usuario.php')?>
 </body>
 </html>
                   

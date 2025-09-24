@@ -7,7 +7,7 @@ $password_repit=$_POST['password-repit'];
 // Validar si las 2 contraseñas son identicas.
 if($password===$password_repit){
     $password_hashed = password_hash($password,PASSWORD_BCRYPT);
-    $db = new SQLite3('../DB_USER.db');
+    $db = new SQLite3('../DB/DB_USER.db');
     //Saber si el la tabla USER existe.
     $result= $db->query('SELECT "name"as nameTable FROM sqlite_sequence')->fetchArray(2);
     if($result[0] !== 'user'){

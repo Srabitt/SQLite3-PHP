@@ -1,6 +1,6 @@
 <section>
     <h2>Inicar una Sesion de Usuario</h2>
-    <form action="./logica/login.php" method="POST" class="formulario-login">
+    <form action="./backend/logica/login.php" method="POST" class="formulario-login">
         <input type="text" placeholder="Usuario:" name="usuario">
         <input type="password" placeholder="Contraseña:" name="password">
         <input type="submit" value="Ingresar">

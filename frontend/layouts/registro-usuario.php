@@ -1,6 +1,6 @@
 <section class="registro">
     <h2>Registrar un nuevo usuario.</h2>
-    <form action="/logica/register.php" method="post" class="formulario-registro">
+    <form action="./backend/logica/register.php" method="post" class="formulario-registro">
         <input type="text" placeholder="Crear usuario:" name="usuario">
         <input type="password" placeholder="Crear contraseña:" name="password">
         <input type="password" placeholder="Repetir contraseña:" name="password-repit">

@@ -26,7 +26,7 @@ if($existeUsuario && $isCorrectPassword){
     $_SESSION['usuario'] = $result_user;
     $_SESSION['logged_in'] = true;
     echo 'Login exitoso.';
-    header('Location: '.'/perfil.php');
+    header('Location: '.'/');
     exit();
 
 }else{

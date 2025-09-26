@@ -2,20 +2,40 @@ body{
     padding: 0;
     margin: 0;
     display: flex;
-    flex-flow: row nowrap;
-    
-}
-
-section{
-    align-content: center;
-    justify-items: center;
-    outline: 2px solid black;
-    flex: 1;
+    flex-flow: column nowrap;
     height: 100vh;
-    /* justify-content: center; */
+    /* justify-content: space-between; */
 
+}
+nav>h3{
+
+    background-color: aqua;
+}
+footer{
+    /* display: flex; */
+    background-color: red;
     
 }
+/*Conjunto de los 2 formularios*/
+.login-register{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+
+    flex: 1; /*ocupar todo*/
+}
+
+.perfil{
+    flex: 1;
+}
+
+/*Formularios*/
+.login,.registro{
+    align-content: center;
+    flex: 1;
+    text-align: center;
+}
+
+/*Estilo entradas de datos(Formularios login y registro)*/
 input{
     margin: 10px;
     height: 50px;
@@ -36,4 +56,42 @@ input[type='submit']{
 .formulario-registro{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*navBar*/
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+}
+
+/*footer*/
+footer{
+    text-align: center;
 }

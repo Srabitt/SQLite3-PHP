@@ -1,17 +1,8 @@
 <?php
-require_once './backend/logica/login-verify.php';
+// require_once './backend/logica/login-verify.php';
 require_once './backend/logica/consumir.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./frontend/style-perfi.css">
-    <title>Perfil</title>
-</head>
-<body>
+<section class="perfil">
     <h1>Perfil del usuario</h1>
     <?=$_SESSION['usuario']?>
     <a href="./backend/logica/logout.php">Salir de seccion.</a>
@@ -36,5 +27,4 @@ require_once './backend/logica/consumir.php';
         </tr>
         <?php endforeach;?>
     </table>
-</body>
-</html>
+</section>

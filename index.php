@@ -1,15 +1,6 @@
 <?php
+require_once './backend/logica/render.php';
 
-// session_set_cookie_params([
-//     'httponly'=>true,
-//     ]);
-session_start();
-$isLogged = isset($_SESSION['logged_in']);
-// if ($isLogged) {
-//     header('Location: '.'./perfil.php');
-//     exit();
-// }
-// var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -24,16 +15,15 @@ $isLogged = isset($_SESSION['logged_in']);
 </head>
 <body>
     <!-- NAVBAR -->
-    <?php require_once('./frontend/layouts/navbar.php')?>
+    <?php require_once('./frontend/layouts/navbar.php');?>
     <!-- CONTENIDO PRINCIPAL -->
      <!-- FUNCION PARA SABER SI ESTA LOGIN O NO -->
-    <?php if ($isLogged): ?>
-        <?php require_once('./frontend/layouts/perfil.php')?>
-    <?php else: ?>
-        <?php require_once('./frontend/layouts/login-register.php')?>
-    <?php endif; ?>
+    <main>
+    <?php traer_contenido($contenido)?>
+    </main>
+     
     <!-- FOOTER -->
-    <?php require_once('./frontend/layouts/footer.html')?>
+    <?php require_once('./frontend/layouts/footer.html');?>
 </body>
 </html>
                   

@@ -24,11 +24,12 @@ if($password===$password_repit){
     session_start();
     $_SESSION['usuario'] = $user;
     $_SESSION['logged_in'] = true;
+    $_SESSION['contenido'] = 'perfil';
 }else{
     header('Location: '.'/');
     exit();
 }
-header('Location: '.'/perfil.php');
+header('Location: '.'/');
 exit();
 
 

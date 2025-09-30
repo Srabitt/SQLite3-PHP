@@ -16,7 +16,10 @@ footer{
     background-color: red;
     
 }
-/*Conjunto de los 2 formularios*/
+main{
+    flex: 1;
+}
+/*Conjunto de los 2 formularios inicio*/
 .login-register{
     display: flex;
     flex-flow: row-reverse nowrap;
@@ -24,9 +27,7 @@ footer{
     flex: 1; /*ocupar todo*/
 }
 
-.perfil{
-    flex: 1;
-}
+
 
 /*Formularios*/
 .login,.registro{
@@ -78,6 +79,8 @@ nav {
 
 .navbar li {
     margin: 0 15px;
+    color: white;
+    font-size: 18px;
 }
 
 .navbar a {

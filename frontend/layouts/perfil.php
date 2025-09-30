@@ -2,10 +2,9 @@
 // require_once './backend/logica/login-verify.php';
 require_once './backend/logica/consumir.php';
 ?>
-<section class="perfil">
+
     <h1>Perfil del usuario</h1>
-    <?=$_SESSION['usuario']?>
-    <a href="./backend/logica/logout.php">Salir de seccion.</a>
+    
 
     <table>
         <tr>
@@ -20,11 +19,11 @@ require_once './backend/logica/consumir.php';
             <td><?=$value['user']?></td>
             <td><?=$value['password_user']?></td>
             <td>
-                <a href="/backend/logica/eliminar-usuario.php?id=<?=$value['id']?>">eliminar</a>
-                <a href="/backend/logica/editar-usuario.php?id=<?=$value['id']?>">editar</a>
+                <!-- Podria crear una clase para realziar todo esto, que con una simple clase ente el from con metodo POST -->
+                <a href="./backend/logica/eliminar-usuario.php?id=<?=$value['id']?>">eliminar</a> <!-- Post -->
+                <a href="?id=<?=$value['id']?>&usuario=<?=$value['user']?>&contenido=editar">editar</a>
             </td>
             
         </tr>
         <?php endforeach;?>
     </table>
-</section>
